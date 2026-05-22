@@ -6,7 +6,7 @@ Attacks on education infrastructure violate fundamental human rights and disrupt
 
 The dashboard includes two global filters on the year and violence perpetrators, which filters the views accordingly. Hovering over each country in the map also provides accompanying information on the total number of incidents, the reported perpetrators, and the nature of institutions attacked. 
 
-**Please engage with the interactive dashboard [here.](INSERT_YOUR_TABLEAU_PUBLIC_LINK_HERE)**
+**Please engage with the interactive dashboard [here.](https://public.tableau.com/app/profile/elizabeth.nabuyama/viz/Educationindanger/Educationindanger)**
 
 
 ### Data Source
