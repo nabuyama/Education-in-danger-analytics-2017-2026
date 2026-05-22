@@ -14,11 +14,13 @@
     <MapboxVectorStylesAndLayers />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
     <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <VizInTooltipHideWorksheet />
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
@@ -44,7 +46,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='2017-2026-education-in-danger-incident-data' name='excel-direct.0m2la490bhg7do14amra60x54cxr'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/L/CD/Ps/educ/2017-2026-education-in-danger-incident-data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/L/CD/Ps/drtfs/Edcn in dngr/2017-2026-education-in-danger-incident-data.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <relation connection='excel-direct.0m2la490bhg7do14amra60x54cxr' name='Sheet1' table='[Sheet1$]' type='table'>
@@ -811,6 +813,522 @@
           <field>[Reported Perpetrator Name]</field>
         </drill-path>
       </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/L/CD/Ps/Edcn in dngr/tableau/Education in danger II.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/22/2026 07:33:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (2017-2026-education-in-danger-incident-data)' increment-value='%null%' refresh-type='create' rows-inserted='7251' timestamp-start='2026-05-22 19:33:56.229' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1809</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event Description</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country ISO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country ISO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country ISO</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Admin 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Admin 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Admin 1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>531</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geo Precision</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Geo Precision]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geo Precision</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location of event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location of event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location of event</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reported Perpetrator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reported Perpetrator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reported Perpetrator</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reported Perpetrator Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reported Perpetrator Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reported Perpetrator Name</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>249</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weapon Carried/Used</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weapon Carried/Used]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weapon Carried/Used</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of education facility</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of education facility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of education facility</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attacks on Schools</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attacks on Schools]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attacks on Schools</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attacks on Universities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attacks on Universities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attacks on Universities</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Military Occupation of Education facility</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Military Occupation of Education facility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Military Occupation of Education facility</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arson attack on education facility</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arson attack on education facility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arson attack on education facility</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Forced Entry into education facility</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Forced Entry into education facility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Forced Entry into education facility</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Damage/Destruction To Ed facility Event</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Damage/Destruction To Ed facility Event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Damage/Destruction To Ed facility Event</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attacks on Students and Teachers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Attacks on Students and Teachers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attacks on Students and Teachers</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Educators Killed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Educators Killed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Educators Killed</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Educators Injured</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Educators Injured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Educators Injured</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Educators Kidnapped</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Educators Kidnapped]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Educators Kidnapped</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Educators Arrested</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Educators Arrested]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Educators Arrested</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Known Educators Kidnap Or Arrest Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Known Educators Kidnap Or Arrest Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Known Educators Kidnap Or Arrest Outcome</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Students Attacked in School</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Students Attacked in School]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Students Attacked in School</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Students Killed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Students Killed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Students Killed</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Students Injured</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Students Injured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Students Injured</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Students Kidnapped</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Students Kidnapped]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Students Kidnapped</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Known Student Kidnap Or Arrest Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Known Student Kidnap Or Arrest Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Known Student Kidnap Or Arrest Outcome</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Students Arrested</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Students Arrested]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Students Arrested</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sexual Violence Affecting School Age Children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sexual Violence Affecting School Age Children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sexual Violence Affecting School Age Children</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SiND Event ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SiND Event ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SiND Event ID</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7251</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Event Entered</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Event Entered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Event Entered</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1040</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Event Modified</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Event Modified]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Event Modified</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_B9697156B1974C1BAF81D5BF6D7DAAFB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -1040,6 +1558,9 @@
                   <column datatype='date' name='Date Event Modified' ordinal='34' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -2578,8 +3099,8 @@
           </layout-options>
           <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='49' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='52' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='51' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='79' h='10875' id='8' type-v2='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#c0c0c0' />
@@ -2743,7 +3264,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='32' />
       <simple-id uuid='{E7019A86-26D3-4333-8C9B-985462FA24C3}' />
     </window>
     <window class='worksheet' hidden='true' name='BAN: educators'>
